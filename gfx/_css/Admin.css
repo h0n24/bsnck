@@ -1,0 +1,39 @@
+body, tr, th, td, pre, tt, code, kbd, samp {
+	font-size: small;}
+/* Kvùli velikosti textu v Mozile */
+html>body, tr>th, tr>td, div>pre, p>pre, li>pre, td>pre, div>tt, p>tt, li>tt, td>tt, div>code, p>code, li>code, td>code, div>kbd, p>kbd, li>kbd, td>kbd, div>samp, p>samp, li>samp, td>samp {
+	font-size: small;}
+h1, h2, h3, h4, h5, h6, p, form, div {margin: 0px;}
+IMG {border: 0px;}
+UL {margin: 0px 0px 0px 0px;
+	padding: 0px;}
+UL UL {margin: 0px 0px 0px 9px;}
+LI {margin: 0px 0px 0px 18px;
+	padding: 0px 0px 0px 0px;}
+A:link, A:active, A:visited {text-decoration: none;}
+FORM INPUT {border: 1px solid #888888; padding:1px;}
+FORM TEXTAREA {border: 1px solid #888888;}
+.ButtonDelete {color:#FFFFFF; background-color:#AA2222; padding: 0px 10px 0px 10px; border: 1px solid #FFFFFF;}
+.ButtonSubmit {color:#FFFFFF; background-color:#117733; padding: 0px 10px 0px 10px; border: 1px solid #FFFFFF;}
+
+body {
+	background-color: #D8E8D1;
+	font-family: Arial, 'Arial CE';
+	color: #000000;
+	margin: 2px;
+	padding: 0px; }
+.FloatLeft {
+	float:left; }
+.FloatRight {
+	float:right; }
+#pnlFormErrors {
+	background-color: red;
+	padding: 2px;
+	margin-bottom: 4px;
+	border: solid 1px black; }
+.FormErrors {
+	background-color: #FFF4F4;
+	color: #FF0000;
+	padding: 2px;
+	margin-bottom: 4px;
+	border: solid 1px Red; }

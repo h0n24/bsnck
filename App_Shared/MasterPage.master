@@ -1,0 +1,42 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="Final_MasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head runat="server">
+	<title>GeoFinal</title>
+	<meta http-equiv="Content-language" content="en"></meta>
+</head>
+<body>
+	<form id="form1" runat="server">
+	<div style="height:80px; background-color:#F5F5F5; border-bottom: solid 1px #AAAAAA;">
+		<h1 style="margin:5px;">Geo Final</h1>
+		<div>Geocache final coordinates and solution</div>
+	</div>
+	<div style="float:left; width:100px; background-color:#F5F5F5">
+		<asp:PlaceHolder ID="phCacheList" runat="server"></asp:PlaceHolder>
+	</div>
+	<div style="margin-top:4px;">
+		<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+   </div>
+	<div style="background-color:#F5F5F5; border-top: solid 1px #AAAAAA; margin-top:4px;">
+		<div>Web under development...<br />server time <%=Now%>
+			<asp:PlaceHolder ID="phAnalytics" runat="server">
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	try {
+		var pageTracker = _gat._getTracker("UA-2706672-14");
+		pageTracker._trackPageview();
+	} catch (err) { }</script>
+
+ <a href="http://www.toplist.cz/"><script language="JavaScript" type="text/javascript">
+<!--
+document.write ('<img src="http://toplist.cz/count.asp?id=962136&amp;logo=s&amp;http='+escape(document.referrer)+'&amp;wi='+escape(window.screen.width)+'&amp;he='+escape(window.screen.height)+'&amp;cd='+escape(window.screen.colorDepth)+'&amp;t='+escape(document.title)+'" width="14" height="14" border=0 alt="TOPlist" />');
+//--></script></a><noscript><img src="http://toplist.cz/count.asp?id=962136&amp;logo=s" border="0" alt="TOPlist" width="14" height="14" /></noscript>
+			</asp:PlaceHolder>
+		</div>
+	</div>
+	</form>
+</body>
+</html>

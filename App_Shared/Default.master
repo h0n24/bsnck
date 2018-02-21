@@ -1,0 +1,212 @@
+<%@ Master Language="VB" CodeFile="~/App_Shared/Default.Master.vb" Inherits="Default_MasterPage"  %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register TagPrefix="ASCX" TagName="Audit" Src="~/App_Shared/Audit.ascx" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs">
+<head runat="server">
+	<title>Není titulek</title>
+	<link rel="stylesheet" media="all" type="text/css" href="/css.aspx" />
+	<meta name="robots" content="index, follow"></meta>
+	<meta name="author" content="abux.net"></meta>
+</head>
+<body>
+		
+<div id="page" class="bbtext">
+	<div id="page-top">
+		<h1 id="lblLogo" class="hidden" runat="server"><%=MyIni.Web.Slogan%></h1>
+		<a id="aLogo" runat="server" href="" style="float:left;"><img id="imgLogo" runat="server" src="" alt="" /></a>
+		<div id="divReklamaTop" runat="server" style="float:right; margin-right:4px; margin-bottom:2px; "><%=Reklama.Generate(101)%>
+		</div>
+	</div>
+	
+	<div id="page-middle">
+		<div id="page-left">
+			<h1 class="hidden">Levý sloupek - navigace</h1>
+
+			<asp:panel id="pnlMenuPrej" runat="server" cssclass="box-menu" visible="false">
+				<h2 class="title" align="center">Menu</h2>
+				<div class="underline">
+					<h3 id="menuPrejPrani" runat="server"><a title="Pøání, Pøáníèka" href="/Prani/kat.aspx">Pøání</a></h3>
+					<asp:panel id="menuPrejPraniOpen" runat="server" visible="false">
+						<h4>&nbsp;<a title="..pøidej nové pøání" href="/Add.aspx?sekce=Prani">..pøidej nové</a></h4>
+					</asp:panel>
+				</div>
+				<div class="underline">
+					<h3 id="menuPrejPohlednice" runat="server"><a title="Elektronické Pohlednice" href="/Pohlednice/kat.aspx">Pohlednice</a></h3>
+					<asp:panel id="menuPrejPohledniceOpen" runat="server" visible="false">
+						<h4>&nbsp;<a title="..vyzvedni pohlednici" href="/Pohlednice/read.aspx">..vyzvedni pohled</a></h4>
+					</asp:panel>
+				</div>
+				<div class="underline">
+					<h3 id="menuPrejVtipy" runat="server"><a title="Vtipy, Vtípky" href="/Vtipy/kat.aspx">Vtipy</a></h3>
+					<asp:panel id="menuPrejVtipyOpen" runat="server" visible="false">
+						<h4>&nbsp;<a title="..pøidej nový vtip" href="/Add.aspx?sekce=Vtipy">..pøidej nový</a></h4>
+					</asp:panel>
+				</div>
+				<h3 id="menuPrejRomantika" runat="server"><a title="Romantiké texty" href="/Romantika/kat.aspx">Romantika</a></h3>
+				<asp:panel id="menuPrejRomantikaOpen" runat="server" visible="false">
+					<h4>&nbsp;<a title="..pøidej nový text" href="/Add.aspx?sekce=Romantika">..pøidej nový</a></h4>
+				</asp:panel>
+			</asp:panel>
+
+			<asp:panel id="pnlMenuCitaty" runat="server" cssclass="box-menu" visible="false">
+				<h2 class="title" align="center">Menu</h2>
+				<div class="underline">
+					<h3 id="menuCitatyCitaty" runat="server"><a title="Citáty, Moudra" href="/Citaty/kat.aspx">Citáty</a></h3>
+					<asp:panel id="menuCitatyCitatyOpen" runat="server" visible="false">
+						<h4>&nbsp;<a title="..autoøi citátù" href="/Citaty/autori.aspx">..autoøi citátù</a></h4>
+						<h4>&nbsp;<a title="..pøidej nový citát" href="/Add.aspx?sekce=Citaty">..pøidej nový</a></h4>
+					</asp:panel>
+				</div>
+				<div class="underline">
+					<h3 id="menuCitatyMotta" runat="server"><a title="Motta" href="/Motta/kat.aspx">Motta</a></h3>
+					<asp:panel id="menuCitatyMottaOpen" runat="server" visible="false">
+						<h4>&nbsp;<a title="..pøidej nové motto" href="/Add.aspx?sekce=Motta">..pøidej nové</a></h4>
+					</asp:panel>
+				</div>
+				<div class="underline">
+					<h3 id="menuCitatyPrislovi" runat="server"><a title="Pøísloví" href="/Prislovi/kat.aspx">Pøísloví</a></h3>
+					<asp:panel id="menuCitatyPrisloviOpen" runat="server" visible="false">
+						<h4>&nbsp;<a title="..pøidej nové pøísloví" href="/Add.aspx?sekce=Prislovi">..pøidej nové</a></h4>
+					</asp:panel>
+				</div>
+				<h3 id="menuCitatyZamysleni" runat="server"><a title="Texty k Zamyšlení" href="/Zamysleni/kat.aspx" runat="server" id="A1">K Zamyšlení</a></h3>
+				<asp:panel id="menuCitatyZamysleniOpen" runat="server" visible="false">
+					<h4>&nbsp;<a title="..pøidej nový text" href="/Add.aspx?sekce=Zamysleni">..pøidej nový</a></h4>
+				</asp:panel>
+			</asp:panel>
+
+			<asp:panel id="pnlMenuLiter" runat="server" cssclass="box-menu" visible="false">
+				<h2 class="title" align="center">Menu</h2>
+				<h3 id="menuLiterSbirky" runat="server" style="" class="underline"><a title="Sbírky, Knihy" href="/Sbirky_List.aspx">Sbírky, Knihy</a></h3>
+				<h3 id="menuLiterBasne" runat="server"><a title="Básnì" href="/Basne/kat.aspx">Básnì</a></h3>
+				<h3 id="menuLiterBasnicky" runat="server"><a title="Básnièky" href="/Basnicky/kat.aspx">Básnièky</a></h3>
+				<h3 id="menuLiterPovidky" runat="server"><a title="Povídky" href="/Povidky/kat.aspx">Povídky</a></h3>
+				<h3 id="menuLiterUvahy" runat="server"><a title="Úvahy" href="/Uvahy/kat.aspx">Úvahy</a></h3>
+				<h3 id="menuLiterPohadky" runat="server"><a title="Pohádky" href="/Pohadky/kat.aspx">Pohádky</a></h3>
+				<h3 id="menuLiterFejetony" runat="server"><a title="Fejetony" href="/Fejetony/kat.aspx">Fejetony</a></h3>
+				<h3 id="menuLiterRomany" runat="server"><a title="Romány" href="/Romany/kat.aspx">Romány</a></h3>
+				<h3 id="menuLiterReportaze" runat="server" class="underline"><a title="Reportáže" href="/Reportaze/kat.aspx">Reportáže</a></h3>
+				<h3 class="underline">&middot;<a title="Autoøi" href="/Autori_Seznam.aspx">Autoøi</a></h3>
+				<h3>&middot;<a title="..pøidej vlastní dílo" href="/Add.aspx?sekce=Dila">Pøidej vlastní dílo</a></h3>
+			</asp:panel>
+
+			<asp:panel id="pnlMenuDoporucujeme" runat="server" cssclass="box-menu">
+				<h2 class="title">Doporuèujeme</h2>
+				<h3 id="menuDopPrej" runat="server"><a href="http://prej.cz" title="Pøej.cz - Pohlednice, Pøání">Pøání, Pohlednice</a></h3>
+				<h3 id="menuDopBasnicky" runat="server"><a href="http://basnicky.cz" title="Básnièky.cz - Básnì, Básnièky">Básnièky a Básnì</a></h3>
+				<h3 id="menuDopCitaty" runat="server"><a href="http://citaty-osobnosti.cz" title="Citáty osobností, Motta, Myšlenky">Citáty</a></h3>
+				<h3 id="menuDopIfun" runat="server"><a href="http://prej.cz/Vtipy/kat.aspx" title="Vtipy">Vtipy</a></h3>
+			</asp:panel>
+
+			<asp:panel id="pnlMenuSluzby" runat="server" cssclass="box-menu">
+				<h2 class="title">Služby</h2>
+				<h4 id="hDiskusniForum" runat="server" visible="false"    ><a href="/Forum.aspx" title="Diskusní fórum">Diskusní fórum</a></h4>
+				<h4 id="hKnihaNavstev" runat="server" visible="false"   ><a href="/KnihaNavstev.aspx" title="Kniha návštìv">Kniha návštìv</a></h4>
+				<h4><a href="/Podporit.aspx" title="Podpoøte nás">Podpoøte nás</a></h4>
+				<h4><a href="/Spolupracovnik.aspx" title="Hledáme spolupracovníky">Hledáme pomoc</a></h4>
+				<asp:PlaceHolder id="phMenuSluzbyRss" runat="server" visible="False"><h4><a href="/RssMenu.aspx" title="RSS kanály">RSS</a></h4></asp:PlaceHolder>
+				<h4><a href="/Reklama.aspx" title="Reklama na našich stránkách">Reklama</a></h4>
+				<h4><a href="/Kontakt.aspx" title="Kontakt na nás">Kontakt</a></h4>
+			</asp:panel>
+		</div>
+
+
+
+		<div id="page-main">		
+			<h1 id="hPageTitle"><%=Server.HtmlEncode(Page.Title)%></h1>
+			<asp:PlaceHolder ID="phMigrace" runat="server" Visible="false">
+				<div class="box-menu" style="color:#FF5555; text-align:left; font-size:90%">
+				POZOR!! Od soboty 23:10 dojde k odpojení serveru z dùvodu údržby a synchronizace migrovaných dat. Doba výpadku cca 2-3 hodiny.<br />
+				Dìkujeme za pochopení.
+				</div>
+			</asp:PlaceHolder>
+			<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+			<div style="clear:both; padding-top:14px; padding-bottom:10px;"><%=Reklama.Generate(102)%></div>
+		</div>
+
+
+		<asp:PlaceHolder ID="phPageRight" Runat="server">
+			<div id="page-right">
+				<h1 class="hidden">Pravý sloupek</h1>
+				<asp:panel id="pnlRightLogin" cssclass="box-menu" runat="server">
+					<h2 class="title" align="center">Uživatel</h2>
+					<div align="center">
+						<form action="/Users_Login.aspx?akce=login" method="post">
+							<p style="font-size: 0.85em" align="center">Email:</p>
+							<div style="margin-bottom: 4px"><input class="input-text" type="text" size="18" name="Login" /></div>
+							<p style="font-size: 0.85em">Heslo:</p>
+							<div style="margin-bottom:2px"><input class="input-text" type="password" size="12" name="Heslo" /></div>
+							<div style="margin-bottom:6px"><input type="submit" value="» Pøihlásit «" /></div>
+						</form>
+					</div>
+					<h3>»<a href="/Users_Registrace.aspx">Registrace zde!</a></h3>
+					<h3>»<a href="/Users_HesloPosli.aspx">Zapomenuté heslo?</a></h3>
+				</asp:panel>
+				<asp:panel id="pnlRightUser" cssclass="box-menu" runat="server" visible="False">
+					<h2 class="title" align="center">Uživatel</h2>
+					<h3 id="menuPremiumMember" runat="server" visible="false">• <a title="Prémiový úèet" href="/Users_Premium.aspx">Premium úèet</a></h3>
+					<h3 id="menuMojiOblibeniAutori" runat="server">• <a title="Moji oblíbení autoøi" href="/OblibeniAutori.aspx">Oblíbení autoøi</a> - <a href="/Autori/oblibenci-dila.aspx">díla</a></h3>
+					<h3 id="menuVzkazy" runat="server">• <a href="/Vzkazy.aspx">Vzkazy</a><span id="spanVzkazNew" runat="server" style="margin-left:10px; color:red; font-weight:bold; color:white; background-color:red; padding: 0px 5px 0px 5px;">NOVÝ</span></h3>
+					<h3>• <a href="/Users/kontakty.aspx">Vaše kontakty</a></h3>
+					<h3>• <a href="/Users_Registrace.aspx?akce=edit">Oprava údajù</a></h3>
+					<h3>• <a href="<%=FN.URL.PredefinedURL.UserLogOut()%>">Odhlásit se</a></h3>
+				</asp:panel>
+				<asp:panel id="pnlRightAdmin" cssclass="box-menu" runat="server" visible="False">
+					<h2 class="title" align="center">Administrace</h2>
+					<h3>» <a href="/Admin/">Administrace</a></h3>
+					<h3>» <a href="/Admin/ReklamaOff.aspx">Reklama ON/OFF</a></h3>
+				</asp:panel>
+				<asp:panel id="pnlRightAutor" cssclass="box-menu" runat="server" visible="False">
+					<h2 class="title" align="center">Autor</h2>
+					<h3>• <a href="/Autori/<%#MyUser.ID%>-dila.aspx">má Díla</a></h3>
+					<h3>• <a href="/Sbirky_List.aspx?autor=<%#MyUser.ID%>">mé Sbírky</a></h3>
+					<h3>• <a href="/Komentare_View.aspx?filtr=prijate&amp;id=<%#MyUser.ID%>">Komentáøe pøijaté</a></h3>
+					<h3 class="underline">• <a href="/Komentare_View.aspx?filtr=odeslane&amp;id=<%#MyUser.ID%>">Komentáøe odeslané</a></h3>
+					<h3>• <a href="/Add.aspx?sekce=Dila">Nové Dílo</a></h3>
+					<h3 class="underline">• <a href="/Sbirky_New.aspx">Nová Sbírka</a></h3>
+					<h3>• <a href="/Autori_Pravidla.aspx">Pravidla pro autory</a></h3>
+					<h3>• <a href="/Autori_Registrace.aspx?akce=edit">Oprava údajù</a></h3>
+				</asp:panel>
+				<asp:panel id="pnlRightReklama" cssclass="box-menu" runat="server">
+					<div align="center"><%=Reklama.Generate(103)%></div>
+				</asp:panel>
+				<asp:panel id="pnlOnlineUsers" cssclass="box-menu" runat="server" Visible="False">
+					<h2 class="title" align="center">Autoøi online</h2>
+					<div align="center" style="font-size:75%"><asp:Label ID="lblOnlineUsers" Runat="server" /></div>
+				</asp:panel>
+				<asp:panel id="pnlRightSvatky" cssclass="box-menu" runat="server" Visible="False">
+					<h2 class="title" align="center">Svátky</h2>
+					<p id="pRightSvatkyDnes" class="underline" align="center" runat="server">#Dnes je XX.YY.#</p>
+					<table cellspacing="0" cellpadding="0" align="center" border="0">
+						<tr><td align="right">Vèera:&nbsp;</td><td><span id="spanRightSvatkyVcera" runat="server">#Svátek#</span></td></tr>
+						<tr><td align="right"><b>Dnes:</b>&nbsp;</td><td><span id="spanRightSvatkyDnes" runat="server" style="font-weight: bold;">#Svátek#</span></td></tr>
+						<tr><td align="right">Zítra:&nbsp;</td><td><span id="spanRightSvatkyZitra" runat="server">#Svátek#</span></td></tr>
+						<tr><td align="right">Pozítøí:&nbsp;</td><td><span id="spanRightSvatkyPozitri" runat="server">#Svátek#</span></td></tr>
+					</table>
+					<p class="underline">Nezapomeòte popøát!</p>
+					<p style="font-size:90%;"><a href="/Svatky.aspx">Kalendáø všech svátkù</a></p>
+				</asp:panel>
+			</div>
+		</asp:PlaceHolder>
+
+	</div>
+	
+	<div id="page-bottom">
+		<h1 class="hidden">Spodek</h1>
+		<div class="box-menu" style="margin-bottom:0px;">
+			<table border="0" width="100%">
+				<tr><td align="left" width="110"><ASCX:Audit ID="ascxAudit" runat="server" /></td>
+					<td align="center" style="font-size:80%">Stránka generována <%=Now.ToString("d.M.yyyy HH:mm")%><br/>U nás jste dnes prohlídl(a) <%=Pages%> stránek.</td>
+					<td align="right" width="110"></td>
+				</tr>
+			</table>
+		</div>
+		<div style="font-size:10px; text-align:center;">
+		<a href="/Odkazy.aspx" style="display:none;">roboti</a><%=Reklama.Generate(701)%></div>
+	</div>
+
+</div>
+<%=Reklama.Generate(201)%>
+</body>
+</html>

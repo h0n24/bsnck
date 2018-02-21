@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /Rekl/
+Disallow: /r/
+Disallow: /Admin/
+Disallow: /_include/
+Disallow: *-print.aspx
+Disallow: /Err.aspx
+Disallow: /Users_Login.aspx
+Disallow: /Hodnoceni.aspx
+Disallow: /SendEmail.aspx
+Disallow: /Pohlednice_Poslat.aspx
+Disallow: /KnihaNavstev_Add.aspx
+Disallow: /Komentare_Add.aspx
+Disallow: /Tip.aspx

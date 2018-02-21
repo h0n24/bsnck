@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<!-- Data použítá v seznamce -->
+<root>
+	<Region id="0" txt="celá ČR" />
+	<Region id="1" txt="Praha a okolí" />
+	<Region id="2" txt="Brněnský kraj" />
+	<Region id="3" txt="Budějovický kraj" />
+	<Region id="4" txt="Jihlavský kraj" />
+	<Region id="5" txt="Karlovarský kraj" />
+	<Region id="6" txt="Královéhradecký kraj" />
+	<Region id="7" txt="Liberecký kraj" />
+	<Region id="8" txt="Olomoucký kraj" />
+	<Region id="9" txt="Ostravský kraj" />
+	<Region id="10" txt="Pardubický kraj" />
+	<Region id="11" txt="Plzeňský kraj" />
+	<Region id="12" txt="Středočeský kraj" />
+	<Region id="13" txt="Ústecký kraj" />
+	<Region id="14" txt="Zlínský kraj" />
+
+	<Znameni id="0" txt="Neuvedeno" />
+	<Znameni id="1" txt="Kozoroh (22.12.-19.1.)" />
+	<Znameni id="2" txt="Vodnář (20.1.-18.2.)" />
+	<Znameni id="3" txt="Ryby (19.2.-19.3.)" />
+	<Znameni id="4" txt="Beran (20.3.-20.4.)" />
+	<Znameni id="5" txt="Býk (21.4-20.5.)" />
+	<Znameni id="6" txt="Blíženec (21.5.-21.6.)" />
+	<Znameni id="7" txt="Rak (22.6.-22.7.)" />
+	<Znameni id="8" txt="Lev (23.7.-22.8.)" />
+	<Znameni id="9" txt="Panna (23.8.-22.9.)" />
+	<Znameni id="10" txt="Váhy (23.9.-22.10.)" />
+	<Znameni id="11" txt="Štír (23.10.-21.11.)" />
+	<Znameni id="12" txt="Střelec (22.11.-21.12.)" />
+
+	<Koureni id="0" txt="Neuvedeno" />
+	<Koureni id="1" txt="Ano" />
+	<Koureni id="2" txt="Občas" />
+	<Koureni id="3" txt="Ne" />
+
+	<Alkohol id="0" txt="Neuvedeno" />
+	<Alkohol id="1" txt="Ano" />
+	<Alkohol id="2" txt="Občas" />
+	<Alkohol id="3" txt="Ne" />
+
+	<Vzdelani id="0" txt="Neuvedeno" />
+	<Vzdelani id="1" txt="Základní" />
+	<Vzdelani id="2" txt="SŠ" />
+	<Vzdelani id="3" txt="VŠ" />
+
+	<Postava id="0" txt="Neuvedeno" />
+	<Postava id="1" txt="Hubená" />
+	<Postava id="2" txt="Normální" />
+	<Postava id="3" txt="Plná" />
+
+	<Vlasy id="0" txt="Neuvedeno" />
+	<Vlasy id="1" txt="Blond" />
+	<Vlasy id="2" txt="Špinavá blond" />
+	<Vlasy id="3" txt="Hnědá" />
+	<Vlasy id="4" txt="Černá" />
+	<Vlasy id="5" txt="Zrzavá" />
+</root>

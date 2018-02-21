@@ -1,0 +1,30 @@
+﻿mapa v náhledu cache
+Nové kešky - v mém okolí podle data + zobrazit vzdálenost od home
+
+Přidat Slova GPS kvůli seo
+
+Nezobrazovat SHOW u mnou koupených (Geocache.aspx)
+Vytvořit CreditSources Tabulku a předělat kód
+Dodělat hledání podle názvu
+Počet kreditů: (odkaz), historie kreditů
+časem předělat hledání GeoSearch podle vzdálenosti - počítání uhlopříčky by hodně zpomalovalo při 1000 keškách - řešení je 4 vysledy TOP 100 podle kvadrantu a z pak až uhlopříčka
+
+SignUp - homecoordinates mandatory
+Invitations
+CountDistance - přesně(elipsoid),přibližně(koule)
+Globalization - PODLE Národních zvyklostí!!!! bez času (Geocaches(s).aspx)
+
+Default - new GC + New FI
+
+ImportCSV - GeocacheTypes - nefunguje import True/false
+
+Reklama do pravého sloupce?
+
+NEWFI nedá credit pro koupené kašky
+
+reklama pozice 601 - anglicky
+
+
+
+Časem:
+Po čase omezit počet Validatorů získávajících credit na třeba max 20.

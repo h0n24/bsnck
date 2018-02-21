@@ -1,0 +1,44 @@
+﻿form dl {
+	margin:0;
+	padding:0;
+	clear:both;
+	margin-bottom:12px;
+	}
+form dt {
+	width:12em;
+	float:left;
+	}
+
+form dd {
+	margin-left:12em;}
+
+.form-label {}
+.form-label-required {
+	font-weight:bold;
+	}
+
+.form-description {
+	font-size:85%;
+	color:#005500;
+	font-style:italic;
+	}
+
+/* ------------ Pages ---------------- */
+
+/* <Geocache.aspx> */
+dl.Geocache {
+	margin:0;
+	padding:0;
+	clear:both;
+	}
+dl.Geocache dt {
+	width:11em;
+	float:left;
+	}
+	
+dl.Geocache dd {
+	margin-bottom:5px;
+	clear:right;
+	}
+/* </Geocache.aspx> */
+

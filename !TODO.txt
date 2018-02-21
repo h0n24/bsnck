@@ -1,0 +1,39 @@
+Nábor editorù pozastavit
+Cituj - moje myšlenky
+
+
+Migrace - promazat databázi použitou z Literu - users, txtdila
+Pravidla pro autory
+Terms of use
+Users_Registrace.aspx - ovìøovací kód proti robotùm CAPTCHA
+
+Ikonka na básnì a básnièky a cituj
+Pøidat Forum na Cituj, basne?
+Facebook - líbí
+
+Hledání Fulltext (google, centrum) + Adsense
+
+ReklamaGoogleAlternative
+Reklama mezi pøíspìvky
+
+404error file not found
+
+po 1.6.2009 Smazat Sekci myslenky z DB/Sekce a konfigurace TxtShort
+Pohlednice Send - logovat IP
+Hodnocení nezohledòuje Sekci v databázi (Pohlednice aj) + Trigger + DB údržba
+
+dodìlat css.aspx -> normal,title,commnet apod. absolutní velikost podle stránky a ne podle pøedešlé definice.
++css kolize title se TxtShortList
+
+Ikonka Cituj,Pøej |C|P|
+
+Add.aspx+Admin/edit/delete - writeTextToFile pro dlouhé soubory (kvùli šetøení prostoru MSSQL)
+
+Editoøi online - E
+
+do <head> dát    <link rel="Alternate" type="application/rss+xml" href="~/ArticleRSS.ashx" title="Všechny èlánky" />
+default.aspx obsahuje úryvky nových textù
+ID-hPageTitle -> class
+
+TIPY:
+-Cituj: citáty cizojazyènì (originál, anglicky, latinsky aj.)

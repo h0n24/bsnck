@@ -1,0 +1,16 @@
+<%@ Master Language="VB" CodeFile="Admin.master.vb" Inherits="Master_Admin" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<title>Není titulek</title>
+	<link rel="stylesheet" media="all" type="text/css" href="/gfx/_css/Admin.css" />
+</head>
+<body>
+	<div style="border: 1px solid #888888; background:#C0D1B8; padding:2px; margin-bottom:6px;">
+		<span style="float:right;">Pøejít na [ <a href="/" style="font-weight:bold;">Web</a> | <a href="/Admin/" style="font-weight:bold;">Administrace</a> ]</span>
+		<span style="font-weight:bold;">Administrace</span> (<asp:Label ID="lblUserNick" runat="server" Font-Italic="true"></asp:Label>)
+	</div>
+
+	<asp:contentplaceholder id="ContentPlaceHolder1" runat="server"></asp:contentplaceholder>
+</body>
+</html>

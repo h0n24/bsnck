@@ -1,0 +1,58 @@
+<%@ Master Language="VB" CodeFile="~/App_Shared/MasterPage_Citaty.master.vb" Inherits="MasterPage_Citaty"  %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register TagPrefix="ASCX" TagName="Audit" Src="~/App_Shared/Audit.ascx" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs">
+<head runat="server">
+	<title>Není titulek</title>
+	<link rel="stylesheet" media="all" type="text/css" href="/css.aspx" />
+	<meta name="robots" content="index, follow"></meta>
+	<meta name="author" content="abux.net"></meta>
+</head>
+<body>
+		
+<div id="page" class="bbtext">
+	<div id="page-top">
+		<h1 id="lblLogo" class="hidden" runat="server"><%=MyIni.Web.Slogan%></h1>
+		<div id="divReklamaTop" runat="server" style="float:right; margin-right:4px; margin-bottom:2px;"><%=Reklama.Generate(101)%>
+		</div>
+	</div>
+	
+	<div id="page-middle">
+		<div id="page-left">
+			<h1 class="hidden">Levý sloupek - navigace</h1>
+
+			<asp:panel id="pnlMenuCitaty" runat="server" cssclass="box-menu">
+				<h2 class="title" align="center">Menu</h2>
+				<div class="underline">
+					<h3 id="menuCitatyCitaty" runat="server"><a title="Citáty osobností" href="/">Citáty</a></h3>
+					<h4><a title="Autoøi citátù" href="/Citaty/autori.aspx">Autoøi citátù</a></h4>
+				</div>
+				<h4><a href="/Kontakt_Citaty.aspx" title="Kontakt na nás">Kontakt</a></h4>
+			</asp:panel>
+
+			<asp:panel id="pnlMenuDoporucujeme" runat="server" cssclass="box-menu">
+				<h2 class="title">Doporuèujeme</h2>
+				<h3 id="menuDopPrej" runat="server"><a href="http://prej.cz" title="Pøej.cz - Pohlednice, Pøání">Pøání, Pohlednice</a></h3>
+				<h3 id="menuDopBasnicky" runat="server"><a href="http://basnicky.cz" title="Básnièky.cz - Básnì, Básnièky">Básnièky a Básnì</a></h3>
+				<h3 id="menuDopIfun" runat="server"><a href="http://prej.cz/Vtipy/kat.aspx" title="Vtipy">Vtipy</a></h3>
+			</asp:panel>
+		</div>
+
+		<div id="page-main-citaty">		
+			<h1 id="hPageTitle"><%=Server.HtmlEncode(Page.Title)%></h1>
+			<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+			<div style="clear:both; padding-top:14px; padding-bottom:10px;"><%=Reklama.Generate(102)%></div>
+		</div>
+
+
+	</div>
+	
+	<div id="page-bottom">
+		<ASCX:Audit ID="ascxAudit" runat="server" />
+	</div>
+
+</div>
+<%=Reklama.Generate(201)%>
+</body>
+</html>

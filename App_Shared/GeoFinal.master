@@ -1,0 +1,100 @@
+﻿<%@ Master Language="VB" CodeFile="GeoFinal.master.vb" Inherits="GeoFinal_MasterPage"  %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register TagPrefix="ASCX" TagName="Audit" Src="~/App_Shared/Audit.ascx" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+	<title>GeoFinal.com</title>
+	<link rel="SHORTCUT ICON" href="/gfx/ico/geofinalcom.ico" />
+	<link rel="stylesheet" media="all" type="text/css" href="/css.aspx" />
+	<link rel="stylesheet" media="all" type="text/css" href="/css/GeoFinal.css" />
+	<meta name="robots" content="index, follow"></meta>
+	<meta name="author" content="abux.net"></meta>
+</head>
+<body>
+<div id="page">
+	<div id="page-top">
+		<h1 id="lblLogo" class="hidden" runat="server" />
+		<a id="aLogo" class="hidden" runat="server" href="" style="float:left;"><img id="imgLogo" runat="server" src="/gfx/logo/geofinalcom.gif" alt="Logo" /></a>
+		<div id="divReklamaTop" runat="server" style="float:right; margin-right:4px"><%=Reklama.Generate(101)%></div>
+	</div>
+	
+	<div id="page-middle">
+		<div id="page-left">
+			<h1 class="hidden">Left Menu</h1>
+
+			<asp:Panel id="pnlGeocaching" cssclass="box-menu" runat="server">
+				<h2 class="title" align="center">Geocaching</h2>
+				<h3>• <a href="/Geocaches.aspx">New Geocaches</a></h3>
+				<h3>• <a href="/GeoSearch.aspx">Find Geocache</a></h3>
+				<h3>• <a href="/Geocaches_Map.aspx">Map</a></h3>
+				<h3>• <a href="/Final_New.aspx">Add Coordinates</a></h3>
+			</asp:Panel>
+
+			<asp:Panel id="pnlLogin" cssclass="box-menu" runat="server" Visible="false">
+				<h2 class="title" align="center">User</h2>
+				<div align="center">
+					<form action="/User_Login.aspx?task=login" method="post">
+						<p style="font-size: 0.85em" align="center">Email:</p>
+						<div style="margin-bottom: 4px"><input class="input-text" type="text" name="Login" style="width:95%" /></div>
+						<p style="font-size: 0.85em">Password:</p>
+						<div style="margin-bottom:2px"><input class="input-text" type="password" size="12" name="Password" /></div>
+						<div style="margin-bottom:6px"><input type="submit" value="» Login «" /></div>
+					</form>
+				</div>
+				<h3>»<a href="/User_SignUp.aspx">Sign Up</a></h3>
+				<h3>»<a href="/User_LostPassword.aspx">Lost password?</a></h3>
+			</asp:Panel>
+
+			<asp:Panel id="pnlUser" cssclass="box-menu" runat="server" visible="False">
+				<h2 class="title" align="center">User</h2>
+				<h3>• <a href="/User_SignUp.aspx?task=edit">Modify Profile</a></h3>
+				<h3>• <a href="/User_Login.aspx?task=logout">Logout</a></h3>
+				<div style="border-top:solid 1px #BBBBBB"><asp:Label ID="lblCredits" runat="server" /></div>
+			</asp:Panel>
+
+			<asp:Panel id="pnlAdmin" cssclass="box-menu" runat="server" visible="False">
+				<h2 class="title" align="center">Administrator</h2>
+				<h3>» <a href="/Admin/">Admin section</a></h3>
+				<h3>» <a href="/Admin/ReklamaOff.aspx">Advertise +/-</a></h3>
+			</asp:Panel>
+
+			<asp:Panel id="pnlServices" runat="server" cssclass="box-menu">
+				<h2 class="title" align="center">Info</h2>
+				<h3>• <a href="/HowItWorks.aspx">How it works?</a></h3>
+				<h3 runat="server" visible="false">• <a href="/TermsOfUse.aspx">Terms of Use</a></h3>
+				<h4 id="H3" runat="server" Visible="false"><a href="Contact.aspx" title="Contact us">Contact</a></h4>
+			</asp:Panel>
+
+			<asp:Panel id="pnlRightReklama" cssclass="box-menu" runat="server">
+				<h2 class="title" align="center">Reklama</h2>
+				<div align="center"><%=Reklama.Generate(103)%></div>
+			</asp:Panel>
+		</div>
+
+		<div id="page-mainXX" style="float:left; width:634px; overflow:hidden;">		
+			<h1 id="hPageTitle" style="text-align:left;"><%=Server.HtmlEncode(Page.Title)%></h1>
+			<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+			<div style="clear:both; padding-top:14px; padding-bottom:10px;"><%=Reklama.Generate(102)%></div>
+		</div>
+	
+	</div>
+	
+	<div id="page-bottom">
+		<h1 class="hidden">Bottom</h1>
+		<div class="box-menu" style="margin-bottom:0px;">
+			<table border="0" width="100%">
+				<tr><td align="left" width="110"><ASCX:Audit ID="ascxAudit" runat="server" /></td>
+					<td align="center" style="font-size:80%">Page generated <%=Now.ToString("d.M.yyyy HH:mm")%><br/>.</td>
+					<td align="right" width="110"></td>
+				</tr>
+			</table>
+		</div>
+		<div style="font-size:10px; text-align:center;">
+		<a href="/Odkazy.aspx" style="display:none;">roboti</a><%=Reklama.Generate(701)%></div>
+	</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+P, FORM, DIV, H1 {margin: 0px;}
+a:link, a:active, a:visited {
+	color: #882222;
+	text-decoration: none;}
+BODY {margin:0px;}
+BODY.Chat {
+	background-color: #FFFFFF;
+	font-size:80%;
+	border-top: 1px solid #AAAAAA;}
+BODY.Right {background: #DDDDDD url(/gfx/chat_right_background.gif) repeat-y; margin-left:1px;}
+BODY.Top {background-color: #EEEEEE;}
+BODY.Bottom {background-color: #EEEEEE;
+	border-top: 1px solid #AAAAAA;}
+#divRightMenu {
+	padding-top: 7px;
+	background: #FFFFFF;}
+#divRightMenu A {
+	margin-left: 3px;
+	padding: 0px 2px 0px 2px;}
+#divRightMenu A.active {
+	font-weight: bold;
+	border-top: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-bottom:  1px solid #BBBBBB;
+	background: #BBBBBB;}
+#divRightMenu A.passive {
+	border:  1px solid #000000;}
+#right-users {
+	font-size: 0.8em;
+	background-color:#BBBBBB;
+	border-top: 1px solid #888888;
+	border-bottom: 1px solid #888888;
+	padding-top: 2px;
+	padding-left: 2px;}
+#right-users UL {padding: 0px; margin: 0px;}
+#right-users LI {
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	list-style-type: none; }
+#right-users .you {font-weight: bold;}
+#right-users .online {}
+#right-users .offline {color: #888888;}
+#right-users .off {
+	color: #888888;
+	text-decoration: line-through;}
+#right-setup {
+	font-size:80%;
+	background-color:#BBBBBB;
+	border-top: 1px solid #888888;
+	border-bottom: 1px solid #888888;
+	padding-left:4px;
+	padding-bottom:6px;}
+SPAN.datum {font-style:italic;}
+SPAN.you {color: #880000;}
+SPAN.jmeno {
+	padding-left: 5px;
+	font-weight: bold;}
+SPAN.txt {padding-left: 5px;}
+FORM INPUT.inputtext {
+	font-size: 80%;
+	border: 1px solid #444444;}
+FORM INPUT.checkbox {margin: 0px;}
+FORM INPUT.submit {}

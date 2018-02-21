@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<!-- Použije se poslední nalezený záznam pro doménu.
+domena ... "*"=všechny
+bannery .. "123" nebo "1,2,4,8"
+t1,t2 .... čas ve dnech (od-do) "00:00" - "24:00"
+d1,d2 .... datum začátku / konce "28.1." nebo "28.1.2005". D2 je počítán do půlnoci toho dne.
+-->
+<reklama>
+	<pozice id="0">
+		<!-- Musí být kvůli vytvoření všech sloupců v DataTable/DataSet -->
+		<data domena="XXXX-Demo" bannery="2" t1="00:00" t2="24:00" d1="20.2." d2="19.2.2005" koment="Můj Komentář" />
+	</pozice>
+	<pozice id="101" popis="Banner nahoře">
+		<data domena="*" bannery="71" koment="AdSense" />
+		<data domena="basne.cz" bannery="70" koment="AdSense" />
+		<!--	<data domena="liter.cz" bannery="32" koment="CzechComp" />
+		<data domena="*" bannery="47" koment="Google AdSense" />
+		<data domena="basne.cz" bannery="1" koment="Bilboard" />
+		<data domena="basnicky.cz" bannery="4" koment="Bilboard" /> -->
+	</pozice>
+
+	<pozice id="102" popis="Banner dole">
+		<data domena="*" bannery="48" koment="Google AdSense" />
+		<data domena="basne.cz" bannery="58" koment="AdSense" />
+<!--	<data domena="basne.cz" bannery="2" koment="Bilboard" />
+		<data domena="basnicky.cz" bannery="5" koment="Bilboard" /> -->
+	</pozice>
+
+	<pozice id="103" popis="Banner vpravo">
+		<data domena="*" bannery="49" koment="Google AdSense" />
+		<data domena="basne.cz" bannery="60" koment="AdSense" />
+<!--	<data domena="prej.cz" bannery="46" d1="1.1.2008" koment="adFox" />
+		<data domena="basne.cz" bannery="3" koment="Bilboard" />
+		<data domena="basnicky.cz" bannery="6" koment="Bilboard" /> -->
+	</pozice>
+
+	<pozice id="201" popis="Html na konci stránky před {/body}">
+<!--
+		<data domena="cituj.cz" bannery="61" koment="Bilboard-intext" />
+		<data domena="prej.cz" bannery="62" koment="Bilboard-intext" />
+-->
+	</pozice>
+
+	<pozice id="501" popis="Text mezi příspěvky">
+		<data domena="*" bannery="50" />
+		<data domena="liter.cz" bannery="56" />
+	</pozice>
+
+	<pozice id="601" popis="Text v patičce emailů">
+		<data domena="*" bannery="0" />
+	</pozice>
+
+	<pozice id="701" popis="SEO odkazy pod zápatím">
+		<data domena="ilove.cz" bannery="55" d2="16.6.2008" koment="escort-guide (Zrušeno protože nezaplatili)" />
+	</pozice>
+
+</reklama>

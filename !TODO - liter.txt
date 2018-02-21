@@ -1,0 +1,47 @@
+Hledání Fulltext (google, centrum) + Adsense
+eknihy
+Recenze knih, kritiky
+Facebook
+Fotky autorù
+Kontrola sprostých slov Komentáøù add
+Komentáøe - avíza na odpovìdi
+Poèet písmen u komentáøe
+
+
+ReklamaGoogleAlternative
+Reklama mezi pøíspìvky
+
+404error file not found
+
+Nahlásit porušení pravidel
+øádkování 1,1 pro TxtDila
+Avíza na komentáže emailem
+vzkazy - hromadné mazání
+
+po 1.6.2009 Smazat Sekci myslenky z DB/Sekce a konfigurace TxtShort
+úpravy kódu na základì ErrorLog chyb
+Pohlednice Send - logovat IP
+Seznamka spamy v odpovìdích
+ExportCSV - FORM Select * FROM [název tabulky] WHERE Podmínka
+Hodnocení nezohledòuje Sekci v databázi (Pohlednice aj) + Trigger + DB údržba
+
+Liter - reachtext díla
+Users_Registrace.aspx - ovìøovací kód proti robotùm CAPTCHA
+Autoøi statistiky - poslaný+pøijatý tipy, koment, díla apod. (kvùli podvádìní)
+Datum posledního díla u Oblíbených autorù
+
+Tipy - vyøešit umazávání tipù po roce?
+Tipy za poslední mìsíc
+
+dodìlat css.aspx -> normal,title,commnet apod. absolutní velikost podle stránky a ne podle pøedešlé definice.
++css kolize title se TxtShortList
+
+Ikonka Cituj,Pøej |C|P|
+
+Add.aspx+Admin/edit/delete - writeTextToFile pro dlouhé soubory (kvùli šetøení prostoru MSSQL)
+
+Editoøi online - E
+
+do <head> dát    <link rel="Alternate" type="application/rss+xml" href="~/ArticleRSS.ashx" title="Všechny èlánky" />
+default.aspx obsahuje úryvky nových textù
+ID-hPageTitle -> class
