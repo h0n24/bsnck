@@ -193,15 +193,6 @@
 	</div>
 	
 	<div id="page-bottom">
-		<h1 class="hidden">Spodek</h1>
-		<div class="box-menu" style="margin-bottom:0px;">
-			<table border="0" width="100%">
-				<tr><td align="left" width="110"><ASCX:Audit ID="ascxAudit" runat="server" /></td>
-					<td align="center" style="font-size:80%">Stránka generována <%=Now.ToString("d.M.yyyy HH:mm")%><br/>U nás jste dnes prohlídl(a) <%=Pages%> stránek.</td>
-					<td align="right" width="110"></td>
-				</tr>
-			</table>
-		</div>
 		<div style="font-size:10px; text-align:center;">
 		<a href="/Odkazy.aspx" style="display:none;">roboti</a><%=Reklama.Generate(701)%></div>
 	</div>
